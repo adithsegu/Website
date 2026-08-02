@@ -1,14 +1,37 @@
 <html>
 <head>
-  <title>Home</title>
+  <title>Skills</title>
   <style>
     body {
       font-weight: bold;
+      background-color: white;
+      color: black;
+    }
+    img {
+      max-width: 300px;
+      height: auto;
+      display: none;
+      margin-top: 10px;
     }
   </style>
+  <script>
+    function toggleSkillsImage() {
+      var img = document.getElementById('skillsImg');
+      img.style.display = (img.style.display === 'block') ? 'none' : 'block';
+    }
+  </script>
 </head>
 <body>
-  <h1>Welcome to the Contact Page</h1>
-  <p>My contact that you can contact me on is Adith Segu At gmail.com .</p>
+  <h1>Welcome to the Skills Page</h1>
+  <button onclick="toggleSkillsImage()">Skills image</button>
+  <br>
+  <img id="skillsImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDy2zVVQDn0Lm1Pv5koakt7AyFaGd2Kll_1fVt_4yl4kk2tCEshxlE3Qam&s=10" alt="Skills">
+  <p>My Skills Are that I am good at chess; I am nice;
+   I am good at soccer etc. If you want to have better skills 
+   My advice is that you should never give up on your dream.
+   For example I was stuck at around 800 elo in 
+   chess but i never give up and i am still trying to reach a
+   goal of 1000 elo.
+   </p>
 </body>
 </html>
