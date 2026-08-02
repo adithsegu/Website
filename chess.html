@@ -6,7 +6,38 @@
       font-weight: bold;
       background-color: white;
       color: black;
+      margin: 0;
+      padding: 0;
     }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333333;
+    }
+
+    ul li {
+      float: left;
+    }
+
+    ul li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    ul li a:hover {
+      background-color: #111111;
+    }
+
+    .content {
+      padding: 10px;
+    }
+
     img {
       max-width: 300px;
       height: auto;
@@ -22,14 +53,23 @@
   </script>
 </head>
 <body>
-  <h1>Welcome to the Chess page</h1>
-  <button onclick="toggleChessImage()">Chess image</button>
-  <br>
-  <img id="chessImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkiZxgmNnFgndoFFw5vYeL8mSImTNLgpJNUEHKIcsprQ&s" alt="Chess">
-  <p>I am a yong chess player with an elo of 888 and
+  <ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="chess.html">Chess</a></li>
+  </ul>
+
+  <div class="content">
+    <h1>Welcome to the Chess page</h1>
+    <button onclick="toggleChessImage()">Chess image</button>
+    <br>
+    <img id="chessImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkiZxgmNnFgndoFFw5vYeL8mSImTNLgpJNUEHKIcsprQ&s" alt="Chess">
+    <p>I am a yong chess player with an elo of 888 and
     I have played 89 international games.Also I have 
     been playing chess since 2022 and my peak elo is 888.
     In the future I have goals of reaching 1000 elo and once 
     I do that I will have more motivation to play chess and gain more rating after that.</p>
+  </div>
 </body>
 </html>
