@@ -6,7 +6,38 @@
       font-weight: bold;
       background-color: white;
       color: black;
+      margin: 0;
+      padding: 0;
     }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333333;
+    }
+
+    ul li {
+      float: left;
+    }
+
+    ul li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    ul li a:hover {
+      background-color: #111111;
+    }
+
+    .content {
+      padding: 10px;
+    }
+
     img {
       max-width: 300px;
       height: auto;
@@ -22,11 +53,19 @@
   </script>
 </head>
 <body>
-  <h1>Welcome to the Home Page</h1>
-  <button onclick="toggleHomeImage()">Home Image</button>
-  <br>
-  <img id="homeImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJZ6mTTIXnArQt85shzhvgKjokKpO0k3Zb06QmCg9siQ&s=10" alt="Home">
-  <p>Idk what to add here.</p>
+  <ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="chess.html">Chess</a></li>
+  </ul>
 
+  <div class="content">
+    <h1>Welcome to the Home Page</h1>
+    <button onclick="toggleHomeImage()">Home Image</button>
+    <br>
+    <img id="homeImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJZ6mTTIXnArQt85shzhvgKjokKpO0k3Zb06QmCg9siQ&s=10" alt="Home">
+    <p>Idk what to add here.</p>
+  </div>
 </body>
 </html>
