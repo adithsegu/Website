@@ -6,32 +6,101 @@
       font-weight: bold;
       background-color: white;
       color: black;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
     }
-    img {
-      max-width: 300px;
-      height: auto;
-      display: none;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333333;
+    }
+
+    ul li {
+      float: left;
+    }
+
+    ul li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    ul li a:hover {
+      background-color: #111111;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .card-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .card {
+      width: 220px;
+      height: 340px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+      background-color: #f9f9f9;
+      box-sizing: border-box;
+    }
+
+    .card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-top: 10px;
+      display: block;
+    }
+
+    .card p {
       margin-top: 10px;
     }
   </style>
-  <script>
-    function toggleAboutImage() {
-      var img = document.getElementById('aboutImg');
-      img.style.display = (img.style.display === 'block') ? 'none' : 'block';
-    }
-  </script>
 </head>
 <body>
-  <h1>Welcome to the About me Page</h1>
-  <button onclick="toggleAboutImage()">About me Image</button>
-  <br>
-  <img id="aboutImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFuZc6MttR1PmHjyeLUL-19TClMTlXmKLLFYCASPFccg&s=10" alt="About Me">
-  <p>My name is Adith Segu and I am 12 years
-     old and going to be a seventh grader at stoller middle school and
-     my facorite color is blue. Also some sports I do is chess,scoccer, and 
-     Taekwondo. I think that messi is better than ronaldo because Messi 
-     has a world cup tropy and ronaldo doesnt. I am also really interested
-     in coding and I wish to learn more about html. </p>
+  <ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="chess.html">Chess</a></li>
+  </ul>
 
+  <div class="content">
+    <h1>Welcome to the About me Page</h1>
+
+    <div class="card-container">
+      <div class="card">
+        <h3>About Me</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFuZc6MttR1PmHjyeLUL-19TClMTlXmKLLFYCASPFccg&s=10" alt="About Me">
+        <p>I am Adith Segu and I like coding, chess, and sports.</p>
+      </div>
+
+      <div class="card">
+        <h3>My Favorite Color</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf0DNbMsJepLehC68bneH117O17wZlyWqAh3ff3EL-dQ&s=10" alt="Blue Card">
+        <p>My favorite color is blue.</p>
+      </div>
+
+      <div class="card">
+        <h3>My Interests</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf0DNbMsJepLehC68bneH117O17wZlyWqAh3ff3EL-dQ&s=10" alt="Interests Card">
+        <p>I am interested in chess, soccer, taekwondo, and HTML.</p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
