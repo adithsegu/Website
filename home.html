@@ -4,11 +4,29 @@
   <style>
     body {
       font-weight: bold;
+      background-color: white;
+      color: black;
+    }
+    img {
+      max-width: 300px;
+      height: auto;
+      display: none;
+      margin-top: 10px;
     }
   </style>
+  <script>
+    function toggleHomeImage() {
+      var img = document.getElementById('homeImg');
+      img.style.display = (img.style.display === 'block') ? 'none' : 'block';
+    }
+  </script>
 </head>
 <body>
   <h1>Welcome to the Home Page</h1>
+  <button onclick="toggleHomeImage()">Home Image</button>
+  <br>
+  <img id="homeImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJZ6mTTIXnArQt85shzhvgKjokKpO0k3Zb06QmCg9siQ&s=10" alt="Home">
   <p>Idk what to add here.</p>
+
 </body>
- </html>
+</html>
