@@ -1,19 +1,37 @@
 <html>
 <head>
-  <title>Home</title>
+  <title>About</title>
   <style>
     body {
       font-weight: bold;
+      background-color: white;
+      color: black;
+    }
+    img {
+      max-width: 300px;
+      height: auto;
+      display: none;
+      margin-top: 10px;
     }
   </style>
+  <script>
+    function toggleAboutImage() {
+      var img = document.getElementById('aboutImg');
+      img.style.display = (img.style.display === 'block') ? 'none' : 'block';
+    }
+  </script>
 </head>
 <body>
   <h1>Welcome to the About me Page</h1>
+  <button onclick="toggleAboutImage()">About me Image</button>
+  <br>
+  <img id="aboutImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFuZc6MttR1PmHjyeLUL-19TClMTlXmKLLFYCASPFccg&s=10" alt="About Me">
   <p>My name is Adith Segu and I am 12 years
      old and going to be a seventh grader at stoller middle school and
      my facorite color is blue. Also some sports I do is chess,scoccer, and 
      Taekwondo. I think that messi is better than ronaldo because Messi 
      has a world cup tropy and ronaldo doesnt. I am also really interested
      in coding and I wish to learn more about html. </p>
+
 </body>
 </html>
