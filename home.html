@@ -8,6 +8,7 @@
       color: black;
       margin: 0;
       padding: 0;
+      font-family: Arial, sans-serif;
     }
 
     ul {
@@ -35,22 +36,40 @@
     }
 
     .content {
-      padding: 10px;
+      padding: 20px;
     }
 
-    img {
-      max-width: 300px;
-      height: auto;
-      display: none;
+    .card-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .card {
+      width: 220px;
+      height: 340px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+      background-color: #f9f9f9;
+      box-sizing: border-box;
+    }
+
+    .card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-top: 10px;
+      display: block;
+    }
+
+    .card p {
       margin-top: 10px;
     }
   </style>
-  <script>
-    function toggleHomeImage() {
-      var img = document.getElementById('homeImg');
-      img.style.display = (img.style.display === 'block') ? 'none' : 'block';
-    }
-  </script>
 </head>
 <body>
   <ul>
@@ -62,10 +81,26 @@
 
   <div class="content">
     <h1>Welcome to the Home Page</h1>
-    <button onclick="toggleHomeImage()">Home Image</button>
-    <br>
-    <img id="homeImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJZ6mTTIXnArQt85shzhvgKjokKpO0k3Zb06QmCg9siQ&s=10" alt="Home">
-    <p>Idk what to add here.</p>
+
+    <div class="card-container">
+      <div class="card">
+        <h3>Home</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJZ6mTTIXnArQt85shzhvgKjokKpO0k3Zb06QmCg9siQ&s=10" alt="Home">
+        <p>This is the home page of my website.</p>
+      </div>
+
+      <div class="card">
+        <h3>Navigation</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFuZc6MttR1PmHjyeLUL-19TClMTlXmKLLFYCASPFccg&s=10" alt="Navigation">
+        <p>Use the menu above to visit the other pages.</p>
+      </div>
+
+      <div class="card">
+        <h3>Welcome</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkiZxgmNnFgndoFFw5vYeL8mSImTNLgpJNUEHKIcsprQ&s" alt="Welcome">
+        <p>Enjoy exploring my website.</p>
+      </div>
+    </div>
   </div>
 </body>
 </html>
